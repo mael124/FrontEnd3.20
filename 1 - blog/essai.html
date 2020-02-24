@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="CSS3 rotate background image only, not element" />
+    <meta charset="UTF-8" />
+    <title>Background Image Transformations</title>
+    <style>
+        body {
+            font-family: arial, helvetica, freesans, sans-serif;
+            font-size: 100%;
+            color: #fff;
+            background-color: #ddd;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        #element0,
+        #element1,
+        #element2,
+        #element3 {
+            width: 12em;
+            font-size: 2em;
+            text-align: center;
+            line-height: 5em;
+            margin: 3em auto;
+            border: 2px solid #666;
+            border-radius: 7px;
+        }
+
+        #element0,
+        #element1 {
+            background: url(http://localhost:5455/images/blue-bg2.jpg) 0 0 repeat;
+        }
+
+        #element1,
+        #element3 {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        #element2,
+        #element3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #element2:before,
+        #element3:before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            z-index: -1;
+            background: url(http://localhost:5455/images/blue-bg2.jpg) 0 0 repeat;
+        }
+
+        #element2:before {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        #element3:before {
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Background Image Transformations</h1>
+
+    <div id="element0">No Transformation</div>
+
+    <div id="element1">Transformed Element</div>
+
+    <div id="element2">Transformed Background</div>
+
+    <div id="element3">Fixed Background</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-bg-banana: #feeaae;
+    --color-bg-coconut: #e7b2a5;
+    --color-black: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/*-- General --*/
+h1
+{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+/*-- Box content --*/
+.boxContent
+{
+    padding: 0px 50px;
+}
+
+/*-- Part Top and Part Bottom--*/
+.row
+{
+    display: flex;
+    padding: 0 30%;
+    margin-top: 80px;
+}
+
+.item
+{
+    flex: 1;
+    min-height: 425px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 9px 10px 0px rgba(0,0,0,0.38);
+}
+
+.item__Illustration
+{
+    background: var(--color-bg-banana);
+    height: 65%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.item__Illustration img
+{
+    height: 60%;
+    width: 60%;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.coconut
+{
+    background: var(--color-bg-coconut);
+}
+
+.item__Description
+{
+    padding: 20px;
+}
+
+.pricePart
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricePart h4
+{
+    font-size: 20px;
+}
+
+.button
+{
+    background: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+button
+{
+    border: none;
+    background: var(--color-black);
+    color: white;
+    font-size: 28px;
+    outline: none;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root{
+    --color-link: #c5c6c8;
+    --color-link-hover: #050505;
+    --color-black: black;
+    --color-white: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+/*-- General --*/
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1
+{
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/*-- Side Bar --*/
+.sideBar
+{
+    height: 100vh;
+    width: 400px;
+    padding: 50px;
+    position: fixed;
+}
+
+#active
+{
+    color: #050505;
+}
+
+.sideBar ul li
+{
+    list-style: none;
+    padding: 10px;
+}
+
+
+.sideBar ul li:hover a
+{
+    color: var(--color-link-hover);
+}
+
+.sideBar ul li a
+{
+    color: var(--color-link);
+    font-size: 18px
+}
+
+.list__bottom
+{
+    position: absolute;
+    bottom: 50px;
+}
+
+
+/*--- Box content --*/
+.boxContent
+{
+    height: 100vh;
+    margin-left: 400px;
+    padding: 50px 100px 50px 0px;
+    display: flex;
+}
+
+/*-- Part Left --*/
+.PartLeft
+{
+    flex: 2;
+    width: 100%;
+}
+
+.Description1
+{
+    padding: 20px 100px 25px 0px;
+}
+
+.Description1 h1
+{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.Description1 p
+{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.Description2
+{
+    padding: 60px 100px 0px 0px;
+}
+
+.Description2 h1
+{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.Description2 p
+{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/*-- Part Right --*/
+.PartRight
+{
+    flex: 1;
+}
+
+/*-- Rotation Image --*/
+.image
+{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/woman.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60.5%;
+  width: 185%;
+  margin-top: 35%;
+  margin-left: -45%;
+  transform: rotate(270deg);
+}
+
+.Description__Photo
+{
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 15%;
+}
+
+.Description__Photo h4
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.Description__Photo p
+{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.Description__Photo a
+{
+    font-weight: bold;
+    color: var(--color-white);
+    font-size: 18px;
+}

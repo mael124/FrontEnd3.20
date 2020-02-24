@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root{
+    --color-bg-image: #fcf7f2;
+    --color-blue: #00859c;
+    --color-white: white;
+    --color-principal: #aeaeae;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+}
+/*-- General --*/
+p
+{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-principal);
+}
+
+h1
+{
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+/*-- box conetnt --*/
+.boxContent
+{
+    padding: 100px;
+    display: flex;
+}
+
+/*-- Illustartion --*/
+.Illustration
+{
+    flex: 1;
+    position: relative;
+    height: 80vh;
+    background: var(--color-bg-image);
+}
+
+.Illustration img
+{
+   width: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+/*-- Description --*/
+.Description
+{
+    flex: 1;
+    height: 80vh;
+    padding: 0px 120px 0px 80px;
+}
+
+
+
+#title
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.head
+{
+    border-left: 2px solid black;
+    padding-left: 10px;
+    color: var(--color-principal);
+}
+
+.head h4
+{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+span
+{
+    color: var(--color-blue);
+}
+
+.button
+{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn 
+{
+    width: 40%;
+    height: 70px;
+    margin-right: 100px;
+    border: none;
+    border-radius: 40px;
+    background: var(--color-blue);
+    color: var(--color-white);
+    font-size: 28px;
+    box-shadow: 7px 11px 24px -4px rgba(0,0,0,0.75)
+}
+
+.button div
+{
+    text-align: center;
+}
+
+#quantity
+{
+    font-size: 40px;
+}
+
+.button div p
+{
+    font-size: 14px;
+}
+
